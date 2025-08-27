@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .xyz {
+            margin-bottom: 0px;
+            background-image: url('{% static "image/homepage6.jpg" %}');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif; /* Set the desired font family */
+            color: #333; /* Set the desired text color */
+        }
+
+        h1.display-4 {
+            font-family: 'Verdana', sans-serif; /* Set a different font for the h1 element */
+            color: #FF0018; /* Set a different color for the h1 element */
+        }
+
+        p.lead {
+            font-size: 18px; /* Set the font size for the lead paragraph */
+        }
+    </style>
+</head>
+
+<body>
+    {% include "blood/navbar.html" %}
+    <br><br>
+    
+    <section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+        <div class="container text-center">
+            <br><br><br><br><br><br>
+
+        </div>
+    </section>
+    <div class="jumbotron" style="margin-top: 0px; margin-bottom: 0px;">
+
+      <h1 class="display-4 text-center">Welcome to Blood Bank Management</h1>
+      
+      <p class="lead text-center">Empowering lives through blood donation. Your contribution can make a significant impact in saving lives.</p>
+
+  </div>
+    
+    {% include "blood/footer.html" %}
+
+</body>
+
+</html>
